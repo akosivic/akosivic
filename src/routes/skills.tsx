@@ -1,7 +1,7 @@
 
 function Skills() {
     return (
-        <h1>Skills</h1>
+        <h1> Skills</h1 >
     );
 };
 

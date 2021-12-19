@@ -18,17 +18,14 @@ function App() {
         <ParallaxLayer offset={0} speed={2.5}>
           <Header scrollTo={scrollTo} />
           <div className="WelcomePage">
-            <img className="avatar" src="" alt="Avatar" />
+            {/* <img className="avatar" src="" alt="Avatar" /> */}
             <div className="right">
               <div className="left">
                 <h1>hello</h1><div className="square bounce-7"></div>
               </div>
-              <p className="description left">I'm Vic A.</p>
-              <p className="description left">Software Engineer | Team Leader| Manager </p>
+              <p className="description left">I'm Vic Salak</p>
+              <p className="description left">Software Engineer | Team Leader | Manager </p>
               <p className="Social-Media">
-                <a href="https://twitter.com/akosivic" rel="noopener noreferrer" target="_BLANK">
-                  <i className="fab fa-twitter"></i>
-                </a>
                 <a href="https://github.com/akosivic" rel="noopener noreferrer" target="_BLANK">
                   <i className="fab fa-github">
                   </i>
@@ -53,7 +50,7 @@ function App() {
             justifyContent: 'center',
             alignItems: 'center',
             color: 'white',
-            backgroundColor: 'blue'
+            // backgroundColor: 'blue'
           }}>
           <Skills />
         </ParallaxLayer>
@@ -66,7 +63,7 @@ function App() {
             justifyContent: 'center',
             alignItems: 'center',
             color: 'white',
-            backgroundColor: 'blue'
+            // backgroundColor: 'blue'
           }}>
           <Experience />
         </ParallaxLayer>
@@ -79,7 +76,7 @@ function App() {
             justifyContent: 'center',
             alignItems: 'center',
             color: 'white',
-            backgroundColor: 'blue'
+            // backgroundColor: 'blue'
           }}>
           <Contact />
         </ParallaxLayer>
