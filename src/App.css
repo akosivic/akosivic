@@ -69,6 +69,10 @@ html { scroll-behavior: smooth; }
 h1,h2,h3,h4,h5,span{
   color:#fff;
 }
+div>h1 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 
 .fill-window {
   height: 100%;
