@@ -66,6 +66,20 @@ html { scroll-behavior: smooth; }
   background: #ffff;
   color: #303030;
 }
-h1{
-  color:antiquewhite;
+h1,h2,h3,h4,h5,span{
+  color:#fff;
+}
+
+.fill-window {
+  height: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background: #151D28;
+}
+
+.skills{
+  position: absolute;
+  margin: 3px;;
 }

@@ -1,7 +1,9 @@
 
 function Contact(){
     return(
-        <h1>Contact</h1>
+        <div className="fill-window" id="Contact">
+            <h1> Contact</h1 >
+        </div>
     );
 };
 

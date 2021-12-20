@@ -1,7 +1,9 @@
 
 function Experience() {
     return (
-        <h1>Experience</h1>
+        <div className="fill-window" id="Experience">
+        <h1> Experience</h1 >
+    </div>
     );
 };
 

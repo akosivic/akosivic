@@ -8,21 +8,21 @@ function Header(props: any) {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="/">Vic Salak</Navbar.Brand>
+                <Navbar.Brand href="#">Vic Salak</Navbar.Brand>
                 <Navbar.Brand className="text-muted">Software Engineer</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto p-2 bd-highlight">
                         {headerlist.map((header, idx) => (
-                            <Nav.Link key={idx} onClick={() => { props.scrollTo(idx + 1); }}>{header}</Nav.Link>
+                            <Nav.Link key={idx} href={`/#${header.replace(' ','')}`}> {header}</Nav.Link>
                         ))}
                     </Nav>
                     <Nav variant="pills">
-                        <Nav.Link onClick={() => { props.scrollTo('4'); }}>Contact</Nav.Link>
+                        <Nav.Link href='/#Contact'>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>);
+        </Navbar >);
 };
 
 export default Header;
