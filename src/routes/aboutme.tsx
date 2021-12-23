@@ -6,7 +6,7 @@ function AboutMe() {
             <div className="WelcomePage">
                 <Row>
                     <Col className='col-md-auto'>
-                        <img className="avatar" src="" alt="Avatar" />
+                        <img className="avatar" src="images/profile.jpg" alt="Avatar" />
                     </Col>
                     <Col className='col-md-auto'>
                         <Row>
