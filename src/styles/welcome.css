@@ -104,4 +104,15 @@
     position: relative;
     /* vertical-align: middle; */
   }
+
+  .skillBadge {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    background: white;
+  }
   

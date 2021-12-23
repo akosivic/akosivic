@@ -1,23 +1,56 @@
+import { Row, Col } from 'react-bootstrap';
 
 function AboutMe() {
     return (
         <div className="fill-window" id="AboutMe">
-            <div className="WelcomePage">
-                {/* <img className="avatar" src="" alt="Avatar" /> */}
-                <div className="right">
-                    <div className="left">
-                        <h1>hello</h1><div className="square bounce-7"></div>
-                    </div>
-                    <p className="description left">I'm Vic Salak</p>
-                    <p className="description left">10+ years Software Engineer | 3 years Engineering Manager </p>
-                    <p className="description left"> 3+ years Scrum Master | 2 years Team Lead </p>
-                    <p className="Social-Media">
-                        <a href="https://github.com/akosivic" rel="noopener noreferrer" target="_BLANK">
-                            <i className="fab fa-github">
-                            </i>
-                        </a>
-                    </p>
-                </div>
+            <div className="Container fluid sm" >
+                <Row>
+                    <Col>
+                        <Row>
+                            <h1>hello</h1>
+                        </Row>
+                        <Row>
+                            <h1>I am Vic Salak</h1>
+                        </Row>
+                        <ul>
+                            <li>
+                                <span>10+ years Software Engineer</span>
+                            </li>
+                            <li>
+                                <span>3 years Engineering Manager </span>
+                            </li>
+                            <li>
+                                <span className="right">3+ years Scrum Master</span>
+                            </li>
+                            <li>
+                                <span className="left">2 years Team Lead</span>
+                            </li>
+                        </ul>
+                        <Row className="justify-content-md-center">
+                            <Col xs={1} md="auto" lg="auto">
+                                <span className="right">10+ years Software Engineer</span>
+                            </Col>
+                            <Col xs={1} md="auto" lg="auto">
+                                <span>&#8226;</span>
+                            </Col>
+                            <Col xs={1} md="auto" lg="auto">
+                                <span className="left">3 years Engineering Manager </span>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-md-center">
+                            <Col xs={1} md="auto" lg="auto">
+                                <span className="right">3+ years Scrum Master</span>
+                            </Col>
+                            <Col xs={1} md="auto" lg="auto">
+                                <span>&#8226;</span>
+                            </Col>
+                            <Col xs={1} md="auto" lg="auto">
+                                <span className="left">2 years Team Lead</span>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+
             </div>
         </div>
     );

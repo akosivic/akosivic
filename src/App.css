@@ -2,6 +2,7 @@
 @import url('./styles/welcome.css');
 .App {
   text-align: center;
+  
 }
 
 html { scroll-behavior: smooth; } 
@@ -66,7 +67,7 @@ html { scroll-behavior: smooth; }
   background: #ffff;
   color: #303030;
 }
-h1,h2,h3,h4,h5,span{
+h1,h2,h3,h4,h5,span,p{
   color:#fff;
 }
 div>h1 {
@@ -81,9 +82,20 @@ div>h1 {
   overflow: hidden;
   display: block;
   background: #151D28;
+  padding-top: 72px;
 }
 
 .skills{
   position: absolute;
-  margin: 3px;;
+  margin: 3px;
+}
+
+#AboutMe p.left{
+  /* width: 40%; */
+  text-align: left;
+}
+
+#AboutMe p.right{
+  /* width: 40%; */
+  text-align: right;
 }

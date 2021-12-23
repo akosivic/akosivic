@@ -1,5 +1,5 @@
 
-import { ProgressBar } from 'react-bootstrap';
+import { ProgressBar, Card, Row, Col } from 'react-bootstrap';
 function Skills() {
 
     type skill = {
@@ -14,35 +14,67 @@ function Skills() {
     return (
         <div className="fill-window" id="Skills">
             <h1>Skills</h1 >
-            <div className="container">
-                <div className="row">
-                    <div className="col">
+            <div className="container fluid">
+                <Row xs={2} md={4} lg={6}>
+                    <Col>
+                        <a href='https://www.scrum-institute.org/badges/37410105264279'>
+                            <img src="images/scrum-institute.png" alt="scrum-institute" style={{ width: "200px", padding: "10px", margin: "10px" }} />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href=''>
+                            <img src="images/javascript.svg" alt="javascript" className="skillBadge" />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href='https://react-bootstrap.github.io/'>
+                            <img src="images/bootstrap.svg" alt="bootstrap" className="skillBadge" />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href='https://reactjs.org/'>
+                            <img src="images/react.svg" alt="reactjs" className="skillBadge" />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href='https://docs.microsoft.com/en-us/dotnet/'>
+                            <img src="images/csharp.svg" alt="csharp" className="skillBadge" />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a href='https://www.microsoft.com/en-us/sql-server/sql-server-2019'>
+                            <img src="images/sqlserver.svg" alt="sqlserver" className="skillBadge" />
+                        </a>
+                    </Col>
+                </Row>
+                <Row xs={2} md={2} lg={2}>
+                    <Col>
                         {/* <h2>Professional</h2> */}
                         {professionalSkills.map((skills, idx) => (
-                            <div className="row">
-                                <div className="col-4">
+                            <Row>
+                                <Col>
                                     <span key={idx} style={{ float: "left" }}>{skills.skill}</span>
-                                </div>
-                                <div className="col-8" >
-                                    <ProgressBar key={idx} className='col-sm-9' now={skills.level} max={max} />
-                                </div>
-                            </div>
+                                </Col>
+                                <Col >
+                                    <ProgressBar key={idx} now={skills.level} max={max} />
+                                </Col>
+                            </Row>
                         ))}
-                    </div>
-                    <div className="col">
+                    </Col>
+                    <Col>
                         {/* <h2>Interpersonal</h2> */}
                         {interpersonalSkills.map((skills, idx) => (
-                            <div className="row">
-                                <div className="col-4">
+                            <Row>
+                                <Col >
                                     <span style={{ float: "left" }}>{skills.skill}</span>
-                                </div>
-                                <div className="col-8" >
-                                    <ProgressBar className='col-sm-9' now={skills.level} max={max} />
-                                </div>
-                            </div>
+                                </Col>
+                                <Col>
+                                    <ProgressBar now={skills.level} max={max} />
+                                </Col>
+                            </Row>
                         ))}
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div >
         </div >
 

@@ -6,7 +6,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 function Header(props: any) {
     let headerlist: string[] = ["About Me", "Skills", "Experience"];
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" >
             <Container>
                 <Navbar.Brand href="#">Vic Salak</Navbar.Brand>
                 <Navbar.Brand className="text-muted">Software Engineer</Navbar.Brand>
@@ -17,8 +17,8 @@ function Header(props: any) {
                             <Nav.Link key={idx} href={`/#${header.replace(' ','')}`}> {header}</Nav.Link>
                         ))}
                     </Nav>
-                    <Nav variant="pills">
-                        <Nav.Link href='/#Contact'>Contact</Nav.Link>
+                    <Nav variant="pills" defaultActiveKey="#Contact">
+                        <Nav.Link href='#Contact'>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
