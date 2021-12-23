@@ -64,7 +64,7 @@
     text-align: center;
   }
   
-  .right h1 {
+  .WelcomePage  h1 {
     position: relative;
     line-height: 76px;
     font-size: 100px;
@@ -72,7 +72,16 @@
     margin: auto;
     display: inline;
   }
-  .description{
+  .WelcomePage  h2 {
+    position: relative;
+    line-height: 76px;
+    font-size: 70px;
+    font-weight: 800;
+    margin: auto;
+    display: inline;
+  }
+
+  .WelcomePage description{
       font-size: 20px;
       color: antiquewhite;
   }
