@@ -1,9 +1,9 @@
 import { Row, Col } from 'react-bootstrap';
-
+import HoverComponent from '../components/hoverComponent';
 function AboutMe() {
     return (
         <div className="fill-window" id="AboutMe">
-            <div className="WelcomePage">
+            <div className="Container WelcomePage">
                 <Row>
                     <Col className='col-md-auto'>
                         <img className="avatar" src="images/profile.jpg" alt="Avatar" />
@@ -21,29 +21,20 @@ function AboutMe() {
                         </Row>
                         <Row>
                             <Col className='col-md-auto'>
-                                <p>10+ yrs Software Engineer</p>
+                                <HoverComponent HoverText="10+ yrs Software Engineer" Text="Software Engineer"></HoverComponent>
                             </Col>
                             <Col className='col-md-auto'>
-                                <p>3 yrs Engineering Manager </p>
+                                <HoverComponent HoverText="3 yrs Engineering Manager" Text="Engineering Manager"/>
                             </Col>
                             <Col className='col-md-auto'>
-                                <p>3 yrs Scrum Master</p>
+                                <HoverComponent HoverText="3 yrs Scrum Master" Text="Scrum Master"/>
                             </Col>
                             <Col className='col-md-auto'>
-                                <p>2 yrs Team Lead</p>
+                                <HoverComponent HoverText="2 yrs Team Lead" Text="Team Leader"/>
                             </Col>
                         </Row>
                     </Col>
                 </Row>
-
-                {/* <div className="right">
-                    <div className="left">
-                        <h1>hello</h1>
-                    </div>
-                    <p className="description">I'm Vic Salak</p>
-                    <p className="description">Software Engineer | Team Leader | Manager </p>
-                </div> */}
-                {/* ); */}
             </div>
         </div>
     );

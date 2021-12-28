@@ -1,5 +1,5 @@
 
-import { ProgressBar, Card, Row, Col } from 'react-bootstrap';
+import { ProgressBar, Row, Col } from 'react-bootstrap';
 function Skills() {
 
     type skill = {
@@ -14,7 +14,7 @@ function Skills() {
     return (
         <div className="fill-window" id="Skills">
             <h1>Skills</h1 >
-            <div className="container fluid">
+            <div className="container-fluid">
                 <Row xs={2} md={4} lg={6}>
                     <Col>
                         <a href='https://www.scrum-institute.org/badges/37410105264279'>
@@ -66,10 +66,10 @@ function Skills() {
                         {interpersonalSkills.map((skills, idx) => (
                             <Row>
                                 <Col >
-                                    <span style={{ float: "left" }}>{skills.skill}</span>
+                                    <span key={idx} style={{ float: "left" }}>{skills.skill}</span>
                                 </Col>
                                 <Col>
-                                    <ProgressBar now={skills.level} max={max} />
+                                    <ProgressBar key={idx} now={skills.level} max={max} />
                                 </Col>
                             </Row>
                         ))}
