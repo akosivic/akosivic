@@ -3,7 +3,7 @@ import HoverComponent from '../components/hoverComponent';
 function AboutMe() {
     return (
         <div className="fill-window" id="AboutMe">
-            <div className="Container WelcomePage">
+            <div className="container-fluid WelcomePage">
                 <Row>
                     <Col className='col-md-auto'>
                         <img className="avatar" src="images/profile.jpg" alt="Avatar" />

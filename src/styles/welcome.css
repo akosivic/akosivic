@@ -102,14 +102,19 @@ a:hover {
     display: block;
 }
 
+.Social-Medias {
+    margin: 10%;
+    /* text-align: left; */
+}
+
 .Social-Media {
-    margin: 0px;
-    text-align: left;
+    font-size: 20px;
+    padding-right: 10px;
+    margin: 10px;
 }
 
 .Social-Media i {
-    font-size: 30px;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .avatar {

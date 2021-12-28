@@ -82,11 +82,24 @@ div>h1 {
 }
 
 .fill-window {
-    height: 100%;
+    height: auto;
+    margin: 5%;
     text-align: center;
     left: 0;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: visible;
+    display: block;
+    background: #151D28;
+    padding-top: 72px;
+}
+
+.fill-window-100 {
+    height: 100%;
+    margin: 5%;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    overflow: visible;
     display: block;
     background: #151D28;
     padding-top: 72px;

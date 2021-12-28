@@ -1,7 +1,5 @@
-// import { useRef } from 'react';
+
 import { Nav, Navbar, Container } from 'react-bootstrap';
-// import { NavLink } from "react-router-dom";
-// import { IParallax } from '@react-spring/parallax'
 
 function Header(props: any) {
     let headerlist: string[] = ["About Me", "Skills", "Experience"];

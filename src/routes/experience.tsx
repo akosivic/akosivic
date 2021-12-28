@@ -3,7 +3,6 @@ import '../components/timeline/timeline.css';
 function Experience() {
     return (
         <div className="fill-window" id="Experience">
-            {/* <div className="Container-fluid"> */}
                 <h1> Experience</h1 >
                 <Timeline>
                     <TimelineEvent Left={true}>
@@ -28,7 +27,6 @@ function Experience() {
                         <p>Accenture Philippines</p>
                     </TimelineEvent>
                 </Timeline>
-            {/* </div> */}
         </div>
     );
 };
