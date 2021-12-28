@@ -9,7 +9,7 @@ function Skills() {
     let max: number = 10;
 
     let professionalSkills: Array<skill> = [{ skill: 'C#.net', level: 7 }, { skill: 'JavaScript', level: 7 }, { skill: 'Bootstrap', level: 5 }, { skill: 'JQuery', level: 5 }, { skill: 'Unit Testing', level: 5 }, { skill: 'OOP', level: 7 }, { skill: 'SQL', level: 7 }, { skill: 'WPF', level: 7 }]
-    let interpersonalSkills: Array<skill> = [{ skill: 'People Management', level: 5 }, { skill: 'Scrum Master', level: 7 }]
+    let interpersonalSkills: Array<skill> = [{ skill: 'Leadership', level: 5 }, { skill: 'Scrum Master', level: 7 }]
 
     return (
         <div className="fill-window" id="Skills">
