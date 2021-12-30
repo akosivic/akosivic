@@ -2,7 +2,7 @@ import { Row, Col } from 'react-bootstrap';
 import HoverComponent from '../components/hoverComponent';
 function AboutMe() {
     return (
-        <div className="fill-window" id="AboutMe">
+        <div className="fill-window-100" id="AboutMe">
             <div className="container-fluid WelcomePage">
                 <Row>
                     <Col className='col-md-auto'>
@@ -11,12 +11,18 @@ function AboutMe() {
                     <Col className='col-md-auto'>
                         <Row>
                             <Col className='col-md-auto'>
-                                <h2>Hello! I am</h2>
+                                <h2>Hello!</h2>
+                            </Col >
+                            <Col className='col-md-auto'>
+                                <h2>I am</h2>
                             </Col >
                         </Row>
                         <Row>
                             <Col className='col-md-auto'>
-                                <h1>VIC SALAK</h1>
+                                <h1>VIC</h1>
+                            </Col>
+                            <Col className='col-md-auto'>
+                                <h1>SALAK</h1>
                             </Col>
                         </Row>
                         <Row>
